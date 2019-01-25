@@ -1,0 +1,14 @@
+@import-normalize;
+
+@import './base/fonts';
+@import './base/variables';
+@import './base/mixins';
+@import './base/global';
+
+@import './blocks/header';
+@import './blocks/site-nav';
+@import './blocks/slogan';
+@import './blocks/categories';
+@import './blocks/advantages';
+@import './blocks/example';
+@import './blocks/footer';

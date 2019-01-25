@@ -1,0 +1,58 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+
+  font: inherit;
+  color: inherit;
+
+  outline: 0;
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+  min-height: 100%;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  
+  color: #000000;
+  
+  background-color: #ffffff;
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .container {
+    width: 1300px;
+  }
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

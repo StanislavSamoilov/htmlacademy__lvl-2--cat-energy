@@ -1,0 +1,21 @@
+@mixin oswald-normal {
+  font: {
+    family: 'Oswald', 'Arial', sans-serif;
+    weight: 400;
+  }
+}
+
+@mixin oswald-medium {
+  font: {
+    family: 'Oswald', 'Arial', sans-serif;
+    weight: 500;
+  }
+}
+
+@mixin arial-normal {
+  font: {
+    family: 'Arial', sans-serif;
+    weight: 400;
+    style: normal;
+  }
+}

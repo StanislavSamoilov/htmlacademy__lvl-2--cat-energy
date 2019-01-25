@@ -1,0 +1,159 @@
+.site-nav {
+  position: relative;
+}
+
+.site-nav__toggle {
+  position: absolute;
+  top: -43px;
+  right: 20px;
+  z-index: 1;
+
+  width: 24px;
+  height: 18px;
+  margin: 0;
+  padding: 0;
+
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.site-nav--opened .site-nav__toggle {
+  background-image: url("../img/icon-close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.site-nav--closed .site-nav__toggle {
+  background-image: url("../img/icon-mobile-menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.site-nav__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.site-nav__link {
+  display: block;
+  padding: 0 20px;
+  padding-top: 22.5px;
+  padding-bottom: 22.5px;
+
+  @include oswald-medium;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  word-wrap: break-word;
+
+  border-bottom: 1px solid #ebebeb;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.site-nav__link--active {
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+}
+
+@media (max-width: $breakpoint-max-mobile) {
+  .site-nav--closed .site-nav__list {
+    display: none;
+  }
+
+  .no-js .site-nav__list {
+    display: block;
+  }
+
+  .no-js .site-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .site-nav__toggle {
+    display: none;
+  }
+
+  .site-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 439px;
+  }
+
+  .site-nav__item {
+    max-width: 100%;
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .site-nav__link {
+    position: relative;
+
+    padding: 0;
+
+    @include oswald-normal;
+    font-size: 18px;
+    line-height: 25px;
+
+    border: none;
+
+    &--active::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+  
+      width: 100%;
+      height: 2px;
+
+      background-color: $green;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .site-nav__list {
+    padding-top: 6px;
+    width: 477px;
+  }
+
+  .site-nav__link {
+    font-size: 20px;
+    color: #ffffff;
+
+    &--active::after {
+      background-color: #ffffff;
+    } 
+  }
+}

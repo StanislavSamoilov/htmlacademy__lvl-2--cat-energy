@@ -1,0 +1,277 @@
+.footer {
+  // line-height: 0px;
+}
+
+.footer__about-us {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  min-height: 114px;
+  padding: 0 20px;
+  padding-top: 28px;
+}
+
+.footer__info {
+  @include oswald-normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  
+  width: 140px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__address {
+  @include arial-normal;
+  font-size: 14px;
+  line-height: 20px;
+
+  width: 140px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__map {
+  position: relative;
+
+  height: 362px;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+
+    width: 56.5px;
+    height: 53px;
+    transform: translate(-50%, -70%);
+    background-image: url('../img/map-pin.png');
+    background-size: 56.5px, 53px;
+    background-repeat: no-repeat;
+  }
+}
+
+.footer__map-fallback {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  z-index: -1;
+
+  width: 320px;
+  height: auto;
+  transform: translate(-50%);
+}
+
+.footer__map-online {
+  width: 100%;
+  height: 100%;
+}
+
+.footer__contacts {
+  background-color: $gray-light;
+}
+
+.footer__contacts-wrapper {
+  padding: 0 20px;
+}
+
+.footer__logo {
+  display: block;
+  padding-top: 39px;
+  padding-bottom: 27px;
+
+  text-align: center;
+
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.footer__social-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+  padding-top: 22px;
+  padding-bottom: 17px;
+  padding-left: 73px;
+  padding-right: 82px;
+
+  list-style: none;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.footer__social-icon {
+  fill: #666666;
+
+  &:hover,
+  &:focus {
+    fill: $green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.footer__creators-link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 78px;
+
+  @include arial-normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: #666666;
+
+  &:hover .footer__creators-logo,
+  &:focus .footer__creators-logo {
+    fill: $green;
+  }
+
+  &:active {
+    color: rgba($color: $gray, $alpha: 0.3);
+  }
+  
+  &:active .footer__creators-logo {
+    opacity: 0.3;
+  }
+}
+
+.footer__creators-logo {
+  fill: #666666;
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .footer__about-us {
+    min-height: 201px;
+    padding: 0 72px;
+    padding-top: 65px;
+  }
+
+  .footer__info {
+    width: 160px;
+
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .footer__address {
+    width: 160px;
+
+    font-size: 16px;
+    line-height: 20px;
+    text-align: end;
+
+    & span {
+      display: inline-block;
+      padding-top: 19px;
+    }
+  }
+
+  .footer__map {
+    height: 396px;
+
+    &::after {
+      width: 113px;
+      height: 106px;
+      transform: translate(-50%, -40%);
+      background-size: 113px, 106px;
+    }
+  }
+
+  .footer__map-fallback {
+    width: 767px;
+  }
+
+  .footer__contacts-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    padding-top: 26px;
+    padding-bottom: 29px;
+  }
+
+  .footer__logo {
+    border: none;
+  }
+
+  .footer__social-list {
+    min-width: 144px;
+    padding: 0;
+    padding-top: 5px;
+    padding-left: 20px;
+
+    border: none;
+  }
+
+  .footer__social-icon {
+    &--vk {
+      width: 30px;
+      height: 16px;
+    }
+  
+    &--insta {
+      width: 23px;
+      height: 23px;
+    }
+  
+    &--fb {
+      width: 14px;
+      height: 28px;
+    }
+  }
+  .footer__creators-link {
+    padding-top: 3px;
+    min-width: 164px;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .footer__about-us-wrapper {
+    position: relative;
+  }
+
+  .footer__about-us {
+    position: absolute;
+    top: 95px;
+    left: 40px;
+    z-index: 2;
+
+    width: 570px;
+    padding-left: 76px;
+    padding-right: 84px;
+
+    background-color: #ffffff;
+  }
+
+  .footer__address {
+    text-align: start;
+  }
+
+  .footer__map {
+    height: 400px;
+
+    &::after {
+      left: 50%;
+      transform: translate(250%, -40%);
+    }
+  }
+
+  .footer__map-fallback {
+    width: 1440px;
+  }
+
+  .footer__contacts-wrapper {
+    padding: 0 40px;
+    padding-top: 26px;
+    padding-bottom: 29px;
+  }
+}
