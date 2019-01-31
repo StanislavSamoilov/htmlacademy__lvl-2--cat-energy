@@ -28,13 +28,13 @@
 }
 
 .site-nav--opened .site-nav__toggle {
-  background-image: url("../img/icon-close.svg");
+  background-image: url('../img/icon-close.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .site-nav--closed .site-nav__toggle {
-  background-image: url("../img/icon-mobile-menu.svg");
+  background-image: url('../img/icon-mobile-menu.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -129,11 +129,11 @@
     border: none;
 
     &--active::after {
-      content: "";
+      content: '';
       position: absolute;
       bottom: -10px;
       left: 0;
-  
+
       width: 100%;
       height: 2px;
 
@@ -154,6 +154,6 @@
 
     &--active::after {
       background-color: #ffffff;
-    } 
+    }
   }
 }

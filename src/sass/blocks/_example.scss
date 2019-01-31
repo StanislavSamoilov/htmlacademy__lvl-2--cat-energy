@@ -49,10 +49,10 @@
   line-height: 24px;
   text-transform: uppercase;
   text-align: center;
-  
+
   &::after {
     position: absolute;
-    content: "";
+    content: '';
     bottom: -16px;
     left: 18px;
     z-index: 1;
@@ -69,12 +69,12 @@
   }
 
   &--weight::after {
-    content: "снижение \A веса";
+    content: 'снижение \A веса';
     white-space: pre;
   }
 
   &--date::after {
-    content: "затрачено времени";
+    content: 'затрачено времени';
   }
 
   &--weight {
@@ -102,7 +102,7 @@
   margin: 0;
   margin-bottom: 26px;
   padding: 0;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .example__before {
@@ -115,7 +115,7 @@
   overflow: hidden;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -125,7 +125,7 @@
     height: 100%;
 
     background-color: $gray-light;
-  } 
+  }
 }
 
 .example__slider {
@@ -152,7 +152,7 @@
 
   border: 1px solid #cdcdcd;
   border-radius: 6px;
-  
+
   &::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
@@ -167,10 +167,10 @@
   &::-moz-range-thumb {
     width: 35px;
     height: 6px;
-  
+
     background: $green;
     border: none;
-    border-radius: 3px; 
+    border-radius: 3px;
     cursor: pointer;
   }
 
@@ -185,7 +185,7 @@
     position: relative;
 
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       bottom: 0;
       left: 0;
@@ -206,14 +206,14 @@
 
   .example__header {
     margin-bottom: 65px;
-  
+
     font-size: 60px;
   }
-  
+
   .example__text {
     width: 680px;
     margin-bottom: 52px;
-  
+
     font-size: 16px;
     line-height: 24px;
   }
@@ -227,7 +227,7 @@
 
     font-size: 30px;
     line-height: 37.02px;
-    
+
     &::after {
       bottom: -8px;
 
@@ -238,7 +238,7 @@
     }
 
     &--weight::after {
-      content: "снижение веса";
+      content: 'снижение веса';
       left: 23px;
       width: 114px;
     }
@@ -286,7 +286,7 @@
     }
 
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       top: 170px;
       left: 0;
@@ -294,7 +294,7 @@
 
       width: 100%;
       height: 100%;
-  
+
       background-color: $gray-light;
     }
   }
@@ -305,26 +305,40 @@
     margin: 0 auto;
     padding-left: 0;
   }
-  
+
   .example__description {
     position: relative;
 
     font-size: 20px;
     line-height: 20px;
   }
-  
+
   .example__range {
     width: 428px;
     height: 6px;
     margin-right: 23px;
     margin-left: 23px;
     padding: 0 5px;
-  
+
     background-color: #dcdcdc;
     border: none;
     border-radius: 6px;
-  
+
     &::-webkit-slider-thumb {
+      width: 34px;
+      height: 34px;
+
+      background: #ffffff;
+      background-image: url('../img/slider-control.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      border: 1px solid #cdcdcd;
+      border-radius: 50%;
+    }
+
+    &::-moz-range-thumb {
+      position: relative;
+
       width: 34px;
       height: 34px;
 
@@ -345,19 +359,15 @@
       border: 1px solid $green;
       box-shadow: 0px 4px 5px 0px rgba($color: #000000, $alpha: 0.3);
     }
-  
-    &::-moz-range-thumb {
-      position: relative;
 
-      width: 34px;
-      height: 34px;
+    &::-moz-range-thumb:hover,
+    &::-moz-range-thumb:focus {
+      box-shadow: 0px 3px 5px 0px rgba($color: #000000, $alpha: 0.25);
+    }
 
-      background: #ffffff;
-      background-image: url('../img/slider-control.png');
-      background-repeat: no-repeat;
-      background-position: center;
-      border: 1px solid #cdcdcd;
-      border-radius: 50%;
+    &::-moz-range-thumb:active {
+      border: 1px solid $green;
+      box-shadow: 0px 4px 5px 0px rgba($color: #000000, $alpha: 0.3);
     }
   }
 }

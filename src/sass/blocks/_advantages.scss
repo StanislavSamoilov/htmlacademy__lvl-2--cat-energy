@@ -8,7 +8,7 @@
   padding: 0;
   margin-top: -4px;
   margin-bottom: 29px;
-  
+
   @include oswald-normal;
   font-size: 36px;
   line-height: 60px;
@@ -27,7 +27,7 @@
   min-height: 80px;
   padding-top: 2px;
   padding-left: 80px;
-  
+
   @include arial-normal;
   font-size: 14px;
   line-height: 18px;
@@ -35,7 +35,7 @@
 
   &::before {
     position: absolute;
-    content: "";
+    content: '';
     top: 0;
     left: 0;
 
@@ -50,78 +50,77 @@
 
   .no-js &--benefit::before,
   .no-webp &--benefit::before {
-    background-image: url("../img/advantage-leaf@1x.png");
+    background-image: url('../img/advantage-leaf@1x.png');
   }
 
   .webp &--benefit::before {
-    background-image: url("../img/advantage-leaf@1x.webp");
+    background-image: url('../img/advantage-leaf@1x.webp');
   }
 
   .no-js &--easy::before,
   .no-webp &--easy::before {
-    background-image: url("../img/advantage-powder@1x.png");
+    background-image: url('../img/advantage-powder@1x.png');
   }
 
   .webp &--easy::before {
-    background-image: url("../img/advantage-powder@1x.webp");
+    background-image: url('../img/advantage-powder@1x.webp');
   }
 
   .no-js &--profit::before,
   .no-webp &--profit::before {
-    background-image: url("../img/advantage-dining@1x.png");
+    background-image: url('../img/advantage-dining@1x.png');
   }
 
   .webp &--profit::before {
-    background-image: url("../img/advantage-dining@1x.webp");
+    background-image: url('../img/advantage-dining@1x.webp');
   }
 
   .no-js &--fast::before,
   .no-webp &--fast::before {
-    background-image: url("../img/advantage-clock@1x.png");
+    background-image: url('../img/advantage-clock@1x.png');
   }
 
   .webp &--fast::before {
-    background-image: url("../img/advantage-clock@1x.webp");
+    background-image: url('../img/advantage-clock@1x.webp');
   }
 }
 
-@media  (min-resolution: 144dpi),
-        (min-resolution: 1.5dppx) {
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .advantages__item {
     .no-js &--benefit::before,
     .no-webp &--benefit::before {
-      background-image: url("../img/advantage-leaf@2x.png");
+      background-image: url('../img/advantage-leaf@2x.png');
     }
-  
+
     .webp &--benefit::before {
-      background-image: url("../img/advantage-leaf@2x.webp");
+      background-image: url('../img/advantage-leaf@2x.webp');
     }
-  
+
     .no-js &--easy::before,
     .no-webp &--easy::before {
-      background-image: url("../img/advantage-powder@2x.png");
+      background-image: url('../img/advantage-powder@2x.png');
     }
-  
+
     .webp &--easy::before {
-      background-image: url("../img/advantage-powder@2x.webp");
+      background-image: url('../img/advantage-powder@2x.webp');
     }
-  
+
     .no-js &--profit::before,
     .no-webp &--profit::before {
-      background-image: url("../img/advantage-dining@2x.png");
+      background-image: url('../img/advantage-dining@2x.png');
     }
-  
+
     .webp &--profit::before {
-      background-image: url("../img/advantage-dining@2x.webp");
+      background-image: url('../img/advantage-dining@2x.webp');
     }
-  
+
     .no-js &--fast::before,
     .no-webp &--fast::before {
-      background-image: url("../img/advantage-clock@2x.png");
+      background-image: url('../img/advantage-clock@2x.png');
     }
-  
+
     .webp &--fast::before {
-      background-image: url("../img/advantage-clock@2x.webp");
+      background-image: url('../img/advantage-clock@2x.webp');
     }
   }
 }
@@ -132,9 +131,9 @@
 
     margin-bottom: 0;
     padding: 0;
-    
+
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       bottom: 30px;
       left: 0;
@@ -193,21 +192,21 @@
     }
 
     &--benefit::after {
-      content: "1";
+      content: '1';
     }
 
     &--easy::after {
-      content: "2";
+      content: '2';
       right: 4px;
     }
 
     &--profit::after {
-      content: "3";
+      content: '3';
       right: 2px;
     }
 
     &--fast::after {
-      content: "4";
+      content: '4';
       right: 2px;
     }
   }
@@ -219,7 +218,7 @@
   }
   .advantages__header {
     font-size: 60px;
-    
+
     margin-right: 0;
     margin-left: 40px;
   }

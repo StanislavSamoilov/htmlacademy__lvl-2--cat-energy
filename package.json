@@ -6,7 +6,8 @@
     "build": "gulp build",
     "start": "gulp start",
     "prod": "set NODE_ENV=production&& gulp build",
-    "dev": "set NODE_ENV=development&& gulp start"
+    "dev": "set NODE_ENV=development&& gulp start",
+    "stylelint": "stylelint \"**/*.scss\" --syntax scss"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +17,9 @@
     "browser-sync": "^2.26.3",
     "css-mqpacker": "^7.0.0",
     "del": "^3.0.0",
+    "eslint": "^5.12.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.15.0",
     "gulp": "^4.0.0",
     "gulp-cheerio": "^0.6.3",
     "gulp-cheerio-clean-svg": "github:Hiswe/gulp-cheerio-clean-svg",
@@ -35,13 +39,14 @@
     "gulp-webp": "^3.0.0",
     "postcss-normalize": "^7.0.1",
     "posthtml-include": "^1.2.0",
+    "stylelint": "^9.10.1",
+    "stylelint-config-recommended-scss": "^3.2.0",
+    "stylelint-scss": "^3.5.1",
     "webpack": "^4.28.3",
     "webpack-stream": "^5.2.1"
   },
   "browserslist": [
-    "last 1 version",
-    "last 2 Chrome versions",
-    "last 2 Firefox versions",
-    "last 2 Edge versions"
+    "last 2 versions",
+    "IE 11"
   ]
 }

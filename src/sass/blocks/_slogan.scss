@@ -72,22 +72,21 @@
 
   .no-js .slogan,
   .no-webp .slogan {
-    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-image: url('../img/index-background-mobile@1x.jpg');
   }
 
   .webp .slogan {
-    background-image: url("../img/index-background-mobile@1x.webp");
+    background-image: url('../img/index-background-mobile@1x.webp');
   }
 
-  @media  (min-resolution: 144dpi),
-          (min-resolution: 1.5dppx) {
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .no-js .slogan,
     .no-webp .slogan {
-      background-image: url("../img/index-background-mobile@2x.jpg");
+      background-image: url('../img/index-background-mobile@2x.jpg');
     }
-  
+
     .webp .slogan {
-      background-image: url("../img/index-background-mobile@2x.webp");
+      background-image: url('../img/index-background-mobile@2x.webp');
     }
   }
 }
@@ -128,7 +127,7 @@
     text-align: left;
     color: #000000;
   }
-  
+
   .slogan__img {
     position: absolute;
     left: 29px;
@@ -143,7 +142,7 @@
   .slogan__link {
     font-size: 20px;
     line-height: 20px;
-    
+
     width: 245px;
     padding: 16px 0;
     padding-right: 22px;
@@ -170,10 +169,10 @@
     margin-left: 0;
     margin-bottom: 53px;
   }
-  
+
   .slogan__picture {
     order: 10;
-    
+
     width: 552px;
   }
 
@@ -197,7 +196,7 @@
     position: relative;
 
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       top: -113px;
       right: 0;
@@ -214,22 +213,21 @@
 
   .no-js .slogan::after,
   .no-webp .slogan::after {
-    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-image: url('../img/index-background-desktop@1x.jpg');
   }
 
   .webp .slogan::after {
-    background-image: url("../img/index-background-desktop@1x.webp");
+    background-image: url('../img/index-background-desktop@1x.webp');
   }
 
-  @media  (min-resolution: 144dpi),
-          (min-resolution: 1.5dppx) {
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .no-js .slogan::after,
     .no-webp .slogan::after {
-      background-image: url("../img/index-background-desktop@2x.jpg");
+      background-image: url('../img/index-background-desktop@2x.jpg');
     }
-  
+
     .webp .slogan::after {
-      background-image: url("../img/index-background-desktop@2x.webp");
+      background-image: url('../img/index-background-desktop@2x.webp');
     }
   }
 }
@@ -239,7 +237,7 @@
     position: relative;
 
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       top: -113px;
       right: 0;
@@ -256,22 +254,21 @@
 
   .no-js .slogan_wrapper::after,
   .no-webp .slogan__wrapper::after {
-    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-image: url('../img/index-background-desktop@1x.jpg');
   }
 
   .webp .slogan__wrapper::after {
-    background-image: url("../img/index-background-desktop@1x.webp");
+    background-image: url('../img/index-background-desktop@1x.webp');
   }
 
-  @media  (min-resolution: 144dpi),
-          (min-resolution: 1.5dppx) {
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .no-js .slogan_wrapper::after,
     .no-webp .slogan__wrapper::after {
-      background-image: url("../img/index-background-desktop@2x.jpg");
+      background-image: url('../img/index-background-desktop@2x.jpg');
     }
 
     .webp .slogan__wrapper::after {
-      background-image: url("../img/index-background-desktop@2x.webp");
+      background-image: url('../img/index-background-desktop@2x.webp');
     }
   }
 }

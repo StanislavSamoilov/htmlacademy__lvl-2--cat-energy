@@ -17,7 +17,7 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  
+
   width: 140px;
   margin: 0;
   padding: 0;
@@ -40,7 +40,7 @@
   overflow: hidden;
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 50%;
     left: 50%;
@@ -119,6 +119,10 @@
   }
 }
 
+.footer__creators-logo {
+  fill: #666666;
+}
+
 .footer__creators-link {
   display: flex;
   flex-wrap: wrap;
@@ -139,14 +143,10 @@
   &:active {
     color: rgba($color: $gray, $alpha: 0.3);
   }
-  
+
   &:active .footer__creators-logo {
     opacity: 0.3;
   }
-}
-
-.footer__creators-logo {
-  fill: #666666;
 }
 
 @media (min-width: $breakpoint-tablet) {
@@ -217,12 +217,12 @@
       width: 30px;
       height: 16px;
     }
-  
+
     &--insta {
       width: 23px;
       height: 23px;
     }
-  
+
     &--fb {
       width: 14px;
       height: 28px;
