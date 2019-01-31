@@ -24,7 +24,7 @@ const gulpIf = require('gulp-if');
 const webpack = require('webpack');
 const webpackStream = require('webpack-stream');
 
-const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV === 'development';
+const isDevelopment = process.env.NODE_ENV == 'development';
 
 function reload(done) {
   browserSync.reload();
