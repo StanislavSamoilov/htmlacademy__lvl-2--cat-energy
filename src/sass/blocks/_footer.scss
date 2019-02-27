@@ -12,6 +12,10 @@
   padding-top: 28px;
 }
 
+.footer__about-us--catalog {
+  background-color: $gray-light;
+}
+
 .footer__info {
   @include oswald-normal;
   font-size: 16px;

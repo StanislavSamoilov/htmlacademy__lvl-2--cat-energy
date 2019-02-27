@@ -3808,6 +3808,12 @@
       "integrity": "sha1-s2nW+128E+7PUk+RsHD+7cNXzzQ=",
       "dev": true
     },
+    "deepmerge": {
+      "version": "3.2.0",
+      "resolved": "https://registry.npmjs.org/deepmerge/-/deepmerge-3.2.0.tgz",
+      "integrity": "sha512-6+LuZGU7QCNUnAJyX8cIrlzoEgggTM6B7mm+znKOX4t5ltluT9KLjN6g61ECMS0LTsLW7yDpNoxhix5FZcrIow==",
+      "dev": true
+    },
     "default-compare": {
       "version": "1.0.0",
       "resolved": "https://registry.npmjs.org/default-compare/-/default-compare-1.0.0.tgz",
@@ -5676,14 +5682,12 @@
         "balanced-match": {
           "version": "1.0.0",
           "bundled": true,
-          "dev": true,
-          "optional": true
+          "dev": true
         },
         "brace-expansion": {
           "version": "1.1.11",
           "bundled": true,
           "dev": true,
-          "optional": true,
           "requires": {
             "balanced-match": "^1.0.0",
             "concat-map": "0.0.1"
@@ -5703,8 +5707,7 @@
         "concat-map": {
           "version": "0.0.1",
           "bundled": true,
-          "dev": true,
-          "optional": true
+          "dev": true
         },
         "console-control-strings": {
           "version": "1.1.0",
@@ -5852,7 +5855,6 @@
           "version": "3.0.4",
           "bundled": true,
           "dev": true,
-          "optional": true,
           "requires": {
             "brace-expansion": "^1.1.7"
           }
@@ -6683,14 +6685,13 @@
       "from": "github:Hiswe/gulp-cheerio-clean-svg",
       "dev": true,
       "requires": {
-        "lodash": "^3.10.1"
+        "deepmerge": "^3.1.0"
       },
       "dependencies": {
         "lodash": {
           "version": "3.10.1",
           "resolved": "https://registry.npmjs.org/lodash/-/lodash-3.10.1.tgz",
-          "integrity": "sha1-W/Rejkm6QYnhfUgnid/RW9FAt7Y=",
-          "dev": true
+          "integrity": "sha1-W/Rejkm6QYnhfUgnid/RW9FAt7Y="
         }
       }
     },
