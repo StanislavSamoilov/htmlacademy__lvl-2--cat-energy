@@ -156,4 +156,13 @@
       background-color: #ffffff;
     }
   }
+
+  .site-nav--catalog .site-nav__link {
+    font-size: 20px;
+    color: #000000;
+
+    &--active::after {
+      background-color: $green;
+    }
+  }
 }
