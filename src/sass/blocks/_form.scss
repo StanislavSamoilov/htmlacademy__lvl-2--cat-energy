@@ -387,10 +387,7 @@
   }
 
   .form__personal-list {
-    //
-    margin-left: 71px;
-    margin-right: 67px;
-    //
+    margin: 0 70px;
     margin-bottom: 72px;
 
     font-size: 20px;
@@ -408,10 +405,7 @@
   }
 
   .form__program-list {
-    //
-    margin-left: 71px;
-    margin-right: 67px;
-    //
+    margin: 0 70px;
     padding-top: 33px;
     padding-left: 86px;
 
@@ -447,7 +441,6 @@
   .form__contact-title {
     width: 594px;
     margin: 0 30px;
-    //
     margin-bottom: 76px;
 
     padding-top: 74px;
@@ -659,7 +652,6 @@
 
   .form__contact-title {
     margin: 0px;
-    //
     margin-bottom: 76px;
 
     padding: 0 40px;
@@ -702,7 +694,6 @@
 
   .form__comment-title {
     margin: 0;
-    //
     margin-bottom: 76px;
 
     padding: 0 40px;
