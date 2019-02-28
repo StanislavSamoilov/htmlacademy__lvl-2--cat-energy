@@ -36,7 +36,7 @@
           <a class="site-nav__link site-nav__link--active">Каталог продукции</a>
         </li>
         <li class="site-nav__item">
-          <a class="site-nav__link" href="#">Подбор программы</a>
+          <a class="site-nav__link" href="form.html">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -79,7 +79,7 @@
               <td>700 Р.</td>
             </tr>
           </table>
-          <button class="catalog__button">Заказать</button>
+          <button class="catalog__button" type="button">Заказать</button>
         </li>
         <li class="catalog__item">
           <picture class="catalog__picture">
@@ -111,7 +111,7 @@
               <td>1000 Р.</td>
             </tr>
           </table>
-          <button class="catalog__button">Заказать</button>
+          <button class="catalog__button" type="button">Заказать</button>
         </li>
         <li class="catalog__item">
           <picture class="catalog__picture">
@@ -143,7 +143,7 @@
               <td>700 Р.</td>
             </tr>
           </table>
-          <button class="catalog__button">Заказать</button>
+          <button class="catalog__button" type="button">Заказать</button>
         </li>
         <li class="catalog__item">
           <picture class="catalog__picture">
@@ -173,7 +173,7 @@
               <td>1000 Р.</td>
             </tr>
           </table>
-          <button class="catalog__button">Заказать</button>
+          <button class="catalog__button" type="button">Заказать</button>
         </li>
         <li class="catalog__item">
           <picture class="catalog__picture">
@@ -207,7 +207,7 @@
               <td>400 Р.</td>
             </tr>
           </table>
-          <button class="catalog__button">Заказать</button>
+          <button class="catalog__button" type="button">Заказать</button>
         </li>
         <li class="catalog__item">
           <picture class="catalog__picture">
@@ -240,7 +240,7 @@
               <td>700 Р.</td>
             </tr>
           </table>
-          <button class="catalog__button">Заказать</button>
+          <button class="catalog__button" type="button">Заказать</button>
         </li>
         <li class="catalog__item">
           <picture class="catalog__picture">
@@ -272,78 +272,76 @@
               <td>500 Р.</td>
             </tr>
           </table>
-          <button class="catalog__button">Заказать</button>
+          <button class="catalog__button" type="button">Заказать</button>
         </li>
         <li class="catalog__item catalog__item--more">
           <p class="catalog__info">Показать еще 100500 товаров</p>
           <p class="catalog__description">На самом деле вкусов гораздо больше!</p>
-          <button class="catalog__button catalog__button--all">Показать все</button>
+          <button class="catalog__button catalog__button--all" type="button">Показать все</button>
         </li>
       </ul>
     </section>
 
-    <section class="additions">
-      <div class="container additions__wrapper">
-        <h2 class="additions__title">Дополнительные товары</h2>
-        <div class="additions__catalog-wrapper">
-          <ul class="additions__list">
-            <li class="additions__item">
-              <p class="additions__name">Сахарозаменитель</p>
-              <table class="additions__table">
-                <tr>
-                  <td>1 упаковка (100 г)</td>
-                  <td>200 Р.</td>
-                </tr>
-              </table>
-              <button class="additions__button">Заказать</button>
-            </li>
-            <li class="additions__item">
-              <p class="additions__name">Питьевая вода</p>
-              <table class="additions__table">
-                <tr>
-                  <td>5 литров</td>
-                  <td>50 Р.</td>
-                </tr>
-              </table>
-              <button class="additions__button">Заказать</button>
-            </li>
-            <li class="additions__item">
-              <p class="additions__name">Молоко</p>
-              <table class="additions__table">
-                <tr>
-                  <td>1 литр</td>
-                  <td>100 Р.</td>
-                </tr>
-              </table>
-              <button class="additions__button">Заказать</button>
-            </li>
-            <li class="additions__item">
-              <p class="additions__name">Витамины</p>
-              <table class="additions__table">
-                <tr>
-                  <td>1 упаковка (30 г)</td>
-                  <td>300 Р.</td>
-                </tr>
-              </table>
-              <button class="additions__button">Заказать</button>
-            </li>
-          </ul>
-          <div class="additions__gift-wrapper">
-            <picture class="additions__picture">
-              <source type="image/webp" media="(min-width: 1300px)"
-                srcset="img/gift-photo-desktop@1x.webp 1x, img/gift-photo-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/gift-photo-tablet@1x.webp 1x, img/gift-photo-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/gift-photo-mobile@1x.webp 1x, img/gift-photo-mobile@2x.webp 2x">
-              <source media="(min-width: 1300px)"
-                srcset="img/gift-photo-desktop@1x.jpg 1x, img/gift-photo-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)"
-                srcset="img/gift-photo-tablet@1x.jpg 1x, img/gift-photo-tablet@2x.jpg 2x">
-              <img class="additions__image" src="img/gift-photo-mobile@1x.jpg" srcset="img/gift-photo-mobile@2x.jpg 2x"
-                alt="" width="280" height="289">
-            </picture>
-            <p class="additions__gift">Закажите все<br> и получите чехол для<br> кота в подарок!</p>
-          </div>
+    <section class="container additions">
+      <h2 class="additions__title">Дополнительные товары</h2>
+      <div class="additions__catalog-wrapper">
+        <ul class="additions__list">
+          <li class="additions__item">
+            <p class="additions__name">Сахарозаменитель</p>
+            <table class="additions__table">
+              <tr>
+                <td>1 упаковка (100 г)</td>
+                <td>200 Р.</td>
+              </tr>
+            </table>
+            <button class="additions__button" type="button">Заказать</button>
+          </li>
+          <li class="additions__item">
+            <p class="additions__name">Питьевая вода</p>
+            <table class="additions__table">
+              <tr>
+                <td>5 литров</td>
+                <td>50 Р.</td>
+              </tr>
+            </table>
+            <button class="additions__button" type="button">Заказать</button>
+          </li>
+          <li class="additions__item">
+            <p class="additions__name">Молоко</p>
+            <table class="additions__table">
+              <tr>
+                <td>1 литр</td>
+                <td>100 Р.</td>
+              </tr>
+            </table>
+            <button class="additions__button" type="button">Заказать</button>
+          </li>
+          <li class="additions__item">
+            <p class="additions__name">Витамины</p>
+            <table class="additions__table">
+              <tr>
+                <td>1 упаковка (30 г)</td>
+                <td>300 Р.</td>
+              </tr>
+            </table>
+            <button class="additions__button" type="button">Заказать</button>
+          </li>
+        </ul>
+        <div class="additions__gift-wrapper">
+          <picture class="additions__picture">
+            <source type="image/webp" media="(min-width: 1300px)"
+              srcset="img/gift-photo-desktop@1x.webp 1x, img/gift-photo-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/gift-photo-tablet@1x.webp 1x, img/gift-photo-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/gift-photo-mobile@1x.webp 1x, img/gift-photo-mobile@2x.webp 2x">
+            <source media="(min-width: 1300px)"
+              srcset="img/gift-photo-desktop@1x.jpg 1x, img/gift-photo-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/gift-photo-tablet@1x.jpg 1x, img/gift-photo-tablet@2x.jpg 2x">
+            <img class="additions__image" src="img/gift-photo-mobile@1x.jpg" srcset="img/gift-photo-mobile@2x.jpg 2x"
+              alt="" width="280" height="289">
+          </picture>
+          <p class="additions__gift">Закажите все<br> и получите чехол для<br> кота в подарок!</p>
         </div>
       </div>
     </section>

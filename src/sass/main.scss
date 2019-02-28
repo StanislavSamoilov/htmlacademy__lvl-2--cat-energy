@@ -6,15 +6,22 @@
 @import './base/mixins';
 @import './base/global';
 
-// Index
+// Header
 @import './blocks/header';
 @import './blocks/site-nav';
+
+// Footer
+@import './blocks/footer';
+
+// Index
 @import './blocks/slogan';
 @import './blocks/categories';
 @import './blocks/advantages';
 @import './blocks/example';
-@import './blocks/footer';
 
 // Catalog
 @import './blocks/catalog';
 @import './blocks/additions';
+
+// Form
+@import './blocks/form';
