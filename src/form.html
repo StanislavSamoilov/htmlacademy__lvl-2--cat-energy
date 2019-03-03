@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html class="no-js" lang="ru">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cat Energy</title>
-  <script>document.documentElement.classList.remove("no-js");</script>
-  <script src="./js/libs/modernizr-webp.js"></script>
   <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
@@ -42,10 +40,10 @@
     </nav>
   </header>
 
-  <main>
+  <main class="container">
     <h1 class="visually-hidden">Продукция для котов «Cat Energy»</h1>
 
-    <section class="container form">
+    <section class="form">
       <h2 class="form__title">Подбор программы</h2>
       <p class="form__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
       <form class="form__action" action="https://echo.htmlacademy.ru" method="POST">
@@ -89,10 +87,16 @@
             <li class="form__contact-item">
               <label for="email">E-mail:*</label>
               <input type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+              <svg class="form__icon form__icon--email" width="17" height="13">
+                <use xlink:href="#sp-icon-mail"></use>
+              </svg>
             </li>
             <li class="form__contact-item">
               <label for="tel">Телефон:*</label>
               <input type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" required>
+              <svg class="form__icon form__icon--tel" width="20" height="20">
+                <use xlink:href="#sp-icon-phone"></use>
+              </svg>
             </li>
           </ul>
         </fieldset>

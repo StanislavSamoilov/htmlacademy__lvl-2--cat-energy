@@ -49,6 +49,15 @@
     flex-grow: 1;
     margin-left: 15px;
     padding: 12px;
+    border: 1px solid $gray-light;
+
+    &:hover {
+      border-color: #cdcdcd;
+    }
+
+    &:focus {
+      border-color: $gray;
+    }
 
     &::placeholder {
       text-transform: uppercase;
@@ -162,34 +171,6 @@
   & label {
     cursor: pointer;
     user-select: none;
-
-    &::after {
-      position: absolute;
-      content: '';
-
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
-    &[for='email']::after {
-      top: 17px;
-      right: 16px;
-
-      width: 17px;
-      height: 13px;
-
-      background-image: url('../img/icon-mail.svg');
-    }
-
-    &[for='tel']::after {
-      top: 13px;
-      right: 13px;
-
-      width: 20px;
-      height: 20px;
-
-      background-image: url('../img/icon-phone.svg');
-    }
   }
 
   & input {
@@ -197,11 +178,38 @@
     margin-left: 10px;
     padding: 12px;
     padding-right: 34px;
+    border: 1px solid $gray-light;
+
+    &:hover {
+      border-color: #cdcdcd;
+    }
+
+    &:focus {
+      border-color: $gray;
+    }
+
+    &:focus + .form__icon {
+      fill: $green;
+    }
 
     &::placeholder {
       text-transform: uppercase;
     }
   }
+}
+
+.form__icon {
+  position: absolute;
+}
+
+.form__icon--email {
+  top: 17px;
+  right: 16px;
+}
+
+.form__icon--tel {
+  top: 13px;
+  right: 13px;
 }
 
 .form__comment-title {
@@ -242,6 +250,15 @@
   font-size: 16px;
   line-height: 18px;
   resize: none;
+  border: 1px solid $gray-light;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    border-color: $gray;
+  }
 
   &::placeholder {
     text-transform: uppercase;
@@ -479,21 +496,19 @@
   .form__contact-item {
     margin-bottom: 20px;
 
-    & label {
-      &[for='email']::after {
-        top: 20px;
-      }
-
-      &[for='tel']::after {
-        top: 17px;
-      }
-    }
-
     & input {
       margin-left: 14px;
       padding: 9px;
       padding-left: 18px;
     }
+  }
+
+  .form__icon--email {
+    top: 20px;
+  }
+
+  .form__icon--tel {
+    top: 17px;
   }
 
   .form__comment-title {
@@ -677,19 +692,13 @@
     width: 570px;
     margin: 0 40px;
 
-    & label {
-      &[for='email']::after {
-        right: 20px;
-      }
-
-      &[for='tel']::after {
-        right: 19px;
-      }
-    }
-
     & input {
       padding-left: 20px;
     }
+  }
+
+  .form__icon--tel {
+    top: 19px;
   }
 
   .form__comment-title {
